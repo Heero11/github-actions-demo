@@ -4,9 +4,18 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "**.py"
+      - "requirements.txt"
+      - ".github/workflows/build-and-test.yml"
+
   pull_request:
     branches:
       - main
+    paths:
+      - "**.py"
+      - "requirements.txt"
+      - ".github/workflows/build-and-test.yml"
 
 jobs:
   build-and-test:
